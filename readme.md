@@ -73,9 +73,9 @@ Both **textual** and **structural** features are extracted:
 
 ## Model Performance 
 
-- **Classification Accuracy:** 47%
+- **Classification Accuracy:** 50%
 - **Regression MAE:** 1.74
-- **RMSE:** 2.06
+- **RMSE:** 2.05
 - **Regression R²:** 0.12
 ---
 
