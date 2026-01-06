@@ -40,7 +40,7 @@ export default function App() {
       <div className="card">
         <h1 className="title">AutoJudge</h1>
         <p className="subtitle">
-          Machine Learning–based programming problem difficulty predictor
+          Machine Learning based programming problem difficulty predictor
         </p>
 
         <textarea
