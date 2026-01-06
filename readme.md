@@ -1,15 +1,40 @@
-## Author
-
-Parshv Meshiya  
-B.Tech CSE, IIT Roorkee
 # AutoJudge – Programming Problem Difficulty Predictor
-AutoJudge is a **full-stack Machine Learning application** that predicts:
-- **Difficulty class**: Easy / Medium / Hard  
-- **Numerical difficulty score**: 0–10 
 
+AutoJudge is a **full-stack Machine Learning application** that predicts the
+**difficulty level (Easy / Medium / Hard)** and a **numerical difficulty score (0–10)**
 for programming problems using their **textual problem statements**.
 
-The system combines NLP, feature engineering, classical ML models, and a FastAPI + React deployment pipeline.
+The project combines **Natural Language Processing (NLP)**, **feature engineering**,
+**classical machine learning models**, and a **FastAPI + React** based web interface.
+
+---
+
+## Project Overview
+
+Competitive programming platforms categorize problems by difficulty, but assigning
+difficulty manually is subjective and time-consuming.  
+AutoJudge automates this process by analyzing the problem statement text and predicting:
+
+- **Difficulty Class**: Easy / Medium / Hard  
+- **Difficulty Score**: Continuous value between 0 and 10  
+
+The system performs real-time inference through a web interface.
+
+---
+
+## Dataset Used
+
+The dataset consists of programming problems collected from competitive programming sources.It is available in data folder of this repository.
+
+Each record contains:
+- Problem statement text
+- Difficulty class label (Easy / Medium / Hard)
+- Numerical difficulty score (0–10)
+
+**Dataset location:**
+```text
+data/problems.csv
+```
 
 ## Features
 - Accepts raw programming problem statements as input
@@ -39,34 +64,30 @@ Both **textual** and **structural** features are extracted:
 
 ## Machine Learning Models
 
-| Task | Model |
-|-----|------|
-| Difficulty Classification | Logistic Regression |
-| Difficulty Score Regression | Random Forest Regressor |
+
+(1) Difficulty Classification  => Logistic Regression 
+
+(2)Difficulty Score Regression => Random Forest Regressor 
 
 ---
 
+## Model Performance 
 
+- **Classification Accuracy:** ~47%
+- **Regression MAE:** ~1.8
+- **Regression R²:** ~0.13
+---
 
 ## Prerequisites
-
 - Python 3.8 or higher
 - Node.js & npm
 - Git
-
 ---
-## Contribution
 
-Contributions are welcome! Please open an issue or submit a pull request for improvements or bug fixes.
-
----
 ## Setup and Installation
-
-
-
 ### (1)Clone the repository
 ```bash
-git clone https://github.com/your-username/AutoJudge.git
+git clone https://github.com/ParshvMeshiya/AutoJudge
 cd AutoJudge
 ```
 
@@ -120,15 +141,6 @@ Frontend will run at:
 
 ---
 
-## Model Performance (Approx.)
-
-- **Classification Accuracy:** ~47%
-- **Regression MAE:** ~1.8
-- **Regression R²:** ~0.13
-
-
----
-
 ## Known Limitations
 
 - Medium class is harder to separate due to dataset imbalance
@@ -148,3 +160,13 @@ Frontend will run at:
 - scikit-learn
 - NumPy, SciPy
 - React (Create React App)
+## Author
+**Name:** Parshv Meshiya   
+**Project:** AutoJudge – Programming Problem Difficulty Predictor    
+**Course:** B.tech CSE 2nd Yr   
+**Enrollment Number:** 24114059
+## Contribution
+
+Contributions are welcome! Please open an issue or submit a pull request for improvements or bug fixes.
+
+---
